@@ -7,87 +7,87 @@
     format="10"
     ir-eligibility="COMPATIBLE"
     plugin-version="3.3.0"
-    timestamp="1552052009238"
-    token="3099500599455597167"
+    timestamp="1552118090692"
+    token="345329955232491291"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="477" />
+        duration="583" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="10" />
+        duration="24" />
     <task
         name="verifier"
-        duration="1" />
+        duration="4" />
 
     <artifact
-        location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1552051130573"
+        timestamp="1552112943708"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1552051859272"
+        timestamp="1552116976979"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1552052009238"
+        timestamp="1552118090692"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
     </build>
 

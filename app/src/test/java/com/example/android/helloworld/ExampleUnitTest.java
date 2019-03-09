@@ -1,4 +1,4 @@
-package com.example.android.helloworld;
+package com.example.android.remotesuitetrigger;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-#Fri Mar 08 18:48:55 IST 2019
-base.0=/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/transforms/dexMerger/debug/5
+#Sat Mar 09 13:24:52 IST 2019
+base.0=/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/transforms/dexMerger/debug/5
 path.0=classes.dex
 renamed.0=classes.dex

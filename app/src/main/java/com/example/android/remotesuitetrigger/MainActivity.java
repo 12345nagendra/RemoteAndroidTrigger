@@ -11,8 +11,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
-
+import com.example.android.remotesuitetrigger.R;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -32,20 +33,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final Button button = (Button) findViewById(R.id.button_id);
         speakButton = (Button) findViewById(R.id.btn_speak);
         speakButton.setOnClickListener(this);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+       // String[] items = new String[]{"1", "2", "three"};
+        ArrayList<String> items = null;
+        try {
+            items = new ConnectToDB().selectData("PLATFORM");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        ArrayAdapter<String>adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item,items);
+        spinner.setAdapter(adapter);
+
+        Spinner spinner1 = (Spinner) findViewById(R.id.spinner2);
+        // String[] items = new String[]{"1", "2", "three"};
+        ArrayList<String> items1 = null;
+        try {
+            items1 = new ConnectToDB().selectData("COMMANDS");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        ArrayAdapter<String>adapter1 = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item,items1);
+        spinner1.setAdapter(adapter1);
+
 
         voiceinputbuttons();
 
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-//                sharedpreference.edit().putString("button_value", button.getText().toString()).apply();
-//                String value = sharedpreference.getString("button_value", "");
-//                if (value.equals("Web")) {
-//                    requestCode = 1;
-//                }
-//                Uri uri = Uri.parse("http://www.google.com");
                 try {
-                    new ConnectToDB().insertSpeech("Trigger smoke suite",false, "Speech");
-                    Toast.makeText(getApplicationContext(),"Sent Data to Database",Toast.LENGTH_SHORT);
+                    new ConnectToDB().insertSpeech("API","Speech","Trigger smoke suite","TRIGGER");
+                    Toast.makeText(getApplicationContext(), "Sent Data to Database", Toast.LENGTH_SHORT);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -54,9 +71,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
     }
+
+
+
     public void voiceinputbuttons() {
         speakButton = (Button) findViewById(R.id.btn_speak);
         mList = (ListView) findViewById(R.id.list);
+
     }
 
     public void startVoiceRecognitionActivity() {
@@ -88,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 {
                     Toast.makeText(getApplicationContext(),"Finding a Match",Toast.LENGTH_SHORT);
                     try {
-                        new ConnectToDB().insertSpeech(matches.get(i).toString(),false, "Speech");
+                        new ConnectToDB().insertSpeech("API","Speech",matches.get(i).toString(),"TRIGGER");
                         Toast.makeText(getApplicationContext(),"Sent Data to Database",Toast.LENGTH_SHORT);
                     } catch (Exception e) {
                         e.printStackTrace();

@@ -767,6 +767,8 @@ id showCustom
 id showHome
 id showTitle
 id spacer
+id spinner1
+id spinner2
 id split_action_bar
 id spread
 id spread_inside

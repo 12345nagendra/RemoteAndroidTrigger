@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ishamalhotra/Downloads/RemoteSuiteTrigger/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "/Users/meghabaweja/Documents/GitHub/RemoteAndroidTrigger/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/ishamalhotra/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ce064b456301eb15c1e20c4fa032b05c/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/Users/meghabaweja/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d2c618a9a653386f961ac389b10e4d45/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

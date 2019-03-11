@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim blink
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -642,6 +643,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pic
+drawable pic2
+drawable pic3
+drawable ripple
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -679,6 +684,7 @@ id beginning
 id blocking
 id bottom
 id btn_speak
+id btn_speak1
 id buttonPanel
 id button_id
 id center
@@ -743,10 +749,10 @@ id progress_horizontal
 id queue
 id radio
 id relativeLayout1
+id relativeLayout2
 id right
 id right_icon
 id right_side
-id running
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -777,6 +783,7 @@ id src_in
 id src_over
 id standard
 id start
+id stop_button_id
 id submenuarrow
 id submit_area
 id tabMode

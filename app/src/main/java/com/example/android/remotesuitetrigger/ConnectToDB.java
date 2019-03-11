@@ -13,7 +13,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 public class ConnectToDB {
-    public Connection connect() throws Exception {
+
+    long currentTime = System.currentTimeMillis();
+
+    public static Connection connect() throws Exception {
         Connection connection = null;
         try {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -44,7 +47,7 @@ public class ConnectToDB {
         PreparedStatement ps = con.prepareStatement(query);
 
         ps.setString(1, platform);
-        ps.setObject(2, System.currentTimeMillis());
+        ps.setObject(2, currentTime);
         ps.setObject(3, null);
         ps.setString(4, triggerMethod);
         ps.setObject(5, "Queued");
@@ -52,6 +55,38 @@ public class ConnectToDB {
 
         ps.execute();
         System.out.println(ps.toString());
+
+        closedb(con);
+
+    }
+    public String showstatus() throws Exception {
+        Connection con = connect();
+        con.setAutoCommit(true);
+        String sql = "select \"Status\" from \"TRIGGER\" where \"TriggerID\"= (select max(\"TriggerID\") from \"TRIGGER\"); ";
+        Statement stmt1 = con.createStatement();
+        ResultSet rs = stmt1.executeQuery(sql);
+        ArrayList<String> commands = new ArrayList<>();
+
+        while (rs.next()) {
+            String raw = "";
+            raw = rs.getString(1);
+            commands.add(raw);
+        }
+        String abc =commands.get(0);
+        System.out.println("abc"+abc);
+        return abc;
+
+    }
+
+    public void update() throws Exception {
+        Connection con = connect();
+        con.setAutoCommit(true);
+        String query = "update \"TRIGGER\" set \"Status\" = 'Force Stop' where  \"TriggerID\"= (select max(\"TriggerID\") from \"TRIGGER\"); ";
+
+        PreparedStatement ps = con.prepareStatement(query);
+        ps.execute();
+        System.out.println(ps.toString());
+
         closedb(con);
     }
 
